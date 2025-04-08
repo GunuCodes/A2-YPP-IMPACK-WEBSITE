@@ -1,0 +1,425 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    width: 1920px;
+    min-height: 10800px;
+    background: white;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Top Bar Styles */
+.top-bar {
+    background-color: #FFCC00;
+    padding: 5px 0;
+    font-size: 0.8rem;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #000;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.contact-info {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.contact-info i {
+    font-size: 14px;
+}
+
+/* Main Header Styles */
+.main-header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.main-nav a {
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover, .main-nav a.active {
+    color: #0047AB;
+}
+
+.contact-btn {
+    background-color: transparent;
+    color: #0047AB !important;
+    border: 1px solid #0047AB;
+    border-radius: 30px;
+    padding: 8px 20px !important;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #0047AB;
+    color: #fff !important;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1200x600/cccccc/ffffff?text=Office+Background');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 40px;
+    position: relative;
+    width: 1800px;
+    height: 840px;
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.hero .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 500px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.hero h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #FFCC00;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #FFCC00;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    max-width: 450px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background-color: #0047AB;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #003380;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Stats Section */
+.stats-container {
+    margin-top: 0;
+    margin-left: auto;
+    max-width: 400px;
+}
+
+.customer-stats {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    width: 354.43px;
+    height: 229.17px;
+    position: absolute;
+    left: 1254px;
+    top: 222px;
+}
+
+.customer-avatars {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: -10px;
+}
+
+.avatar-more {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #333;
+    border: 2px solid #fff;
+}
+
+.customer-info {
+    color: #333;
+}
+
+.customer-info h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.stars {
+    color: #FFCC00;
+}
+
+.rating-text {
+    font-size: 0.8rem;
+}
+
+.stats-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.stat-card {
+    border-radius: 12px;
+    padding: 15px;
+    color: #fff;
+    background-color: #0047AB;
+    width: 100%;
+}
+
+.stat-card.yellow {
+    border-radius: 12px;
+    padding: 15px;
+    color: #333;
+    background-color: #FFCC00;
+    width: 435.18px;
+    height: 209.31px;
+    position: absolute;
+    left: 1172.38px;
+    top: 474px;
+}
+
+.stat-card.yellow h3 {
+    color: #0047AB;
+}
+
+.stat-card.blue {
+    border-radius: 12px;
+    padding: 15px;
+    color: #fff;
+    background-color: #0047AB;
+    width: 261.89px;
+    height: 209.31px;
+    position: absolute;
+    left: 892px;
+    top: 474px;
+}
+
+.stat-card h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+.blue {
+    background-color: #0047AB;
+}
+
+.yellow {
+    background-color: #FFCC00;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .contact-info {
+        display: none;
+    }
+    
+    .main-nav ul {
+        gap: 10px;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .stats-cards {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar .container {
+        justify-content: center;
+    }
+    
+    .main-header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero-content {
+        text-align: center;
+        margin: 0 auto 40px;
+    }
+    
+    .hero p {
+        margin: 0 auto 30px;
+    }
+    
+    .cta-buttons {
+        justify-content: center;
+    }
+    
+    .customer-stats {
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+    }
+    
+    .customer-stats {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .customer-avatars {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
